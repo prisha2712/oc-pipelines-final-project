@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.get("/")
 def index():
-    return jsonify({"application": "oc-pipelines-final-project", "status": "running"})
+    return jsonify(
+        {"application": "oc-pipelines-final-project", "status": "running"}
+    )
 
 
 @app.get("/health")
